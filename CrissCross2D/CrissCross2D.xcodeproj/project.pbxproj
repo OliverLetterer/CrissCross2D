@@ -1502,6 +1502,7 @@
 				A72B7CF4144195910047FBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A72B7CF5144195910047FBE1 /* Build configuration list for PBXNativeTarget "CrissCross2DTests" */ = {
 			isa = XCConfigurationList;
@@ -1510,6 +1511,7 @@
 				A72B7CF7144195910047FBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
