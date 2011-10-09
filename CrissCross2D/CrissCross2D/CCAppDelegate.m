@@ -7,57 +7,145 @@
 //
 
 #import "CCAppDelegate.h"
+#import "GameConfig.h"
+#import "HelloWorldLayer.h"
+#import "RootViewController.h"
 
 @implementation CCAppDelegate
 
 @synthesize window = _window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (void) removeStartupFlicker
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+	//
+	// THIS CODE REMOVES THE STARTUP FLICKER
+	//
+	// Uncomment the following code if you Application only supports landscape mode
+	//
+#if GAME_AUTOROTATION == kGameAutorotationUIViewController
+    
+    //	CC_ENABLE_DEFAULT_GL_STATES();
+    //	CCDirector *director = [CCDirector sharedDirector];
+    //	CGSize size = [director winSize];
+    //	CCSprite *sprite = [CCSprite spriteWithFile:@"Default.png"];
+    //	sprite.position = ccp(size.width/2, size.height/2);
+    //	sprite.rotation = -90;
+    //	[sprite visit];
+    //	[[director openGLView] swapBuffers];
+    //	CC_ENABLE_DEFAULT_GL_STATES();
+	
+#endif // GAME_AUTOROTATION == kGameAutorotationUIViewController	
+}
+- (void) applicationDidFinishLaunching:(UIApplication*)application
+{
+	// Init the window
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [UIApplication sharedApplication].statusBarHidden = YES;
+    
+	// Try to use CADisplayLink director
+	// if it fails (SDK < 3.1) use the default director
+	if( ! [CCDirector setDirectorType:kCCDirectorTypeDisplayLink] )
+		[CCDirector setDirectorType:kCCDirectorTypeDefault];
+	
+	
+	CCDirector *director = [CCDirector sharedDirector];
+	
+	// Init the View Controller
+    RootViewController *viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
+	viewController.wantsFullScreenLayout = YES;
+	
+	//
+	// Create the EAGLView manually
+	//  1. Create a RGB565 format. Alternative: RGBA8
+	//	2. depth format of 0 bit. Use 16 or 24 bit for 3d effects, like CCPageTurnTransition
+	//
+	//
+	EAGLView *glView = [EAGLView viewWithFrame:_window.bounds
+								   pixelFormat:kEAGLColorFormatRGB565	// kEAGLColorFormatRGBA8
+								   depthFormat:0						// GL_DEPTH_COMPONENT16_OES
+						];
+	
+	// attach the openglView to the director
+	[director setOpenGLView:glView];
+	
+    //	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
+    //	if( ! [director enableRetinaDisplay:YES] )
+    //		CCLOG(@"Retina Display Not supported");
+	
+	//
+	// VERY IMPORTANT:
+	// If the rotation is going to be controlled by a UIViewController
+	// then the device orientation should be "Portrait".
+	//
+	// IMPORTANT:
+	// By default, this template only supports Landscape orientations.
+	// Edit the RootViewController.m file to edit the supported orientations.
+	//
+#if GAME_AUTOROTATION == kGameAutorotationUIViewController
+	[director setDeviceOrientation:kCCDeviceOrientationPortrait];
+#else
+	[director setDeviceOrientation:kCCDeviceOrientationLandscapeLeft];
+#endif
+	
+	[director setAnimationInterval:1.0/60];
+	[director setDisplayFPS:YES];
+	
+	
+	// make the OpenGLView a child of the view controller
+	[viewController setView:glView];
+	
+	// make the View Controller a child of the main window
+    _window.rootViewController = viewController;
+	
+	[_window makeKeyAndVisible];
+	
+	// Default texture format for PNG/BMP/TIFF/JPEG/GIF images
+	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
+	// You can change anytime.
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+    
+	
+	// Removes the startup flicker
+	[self removeStartupFlicker];
+	
+	// Run the intro Scene
+	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    /*
-     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-     */
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+	[[CCDirector sharedDirector] pause];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-     If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-     */
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+	[[CCDirector sharedDirector] resume];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    /*
-     Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-     */
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+	[[CCDirector sharedDirector] purgeCachedData];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
+-(void) applicationDidEnterBackground:(UIApplication*)application {
+	[[CCDirector sharedDirector] stopAnimation];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    /*
-     Called when the application is about to terminate.
-     Save data if appropriate.
-     See also applicationDidEnterBackground:.
-     */
+-(void) applicationWillEnterForeground:(UIApplication*)application {
+	[[CCDirector sharedDirector] startAnimation];
 }
 
+- (void)applicationWillTerminate:(UIApplication *)application {
+	CCDirector *director = [CCDirector sharedDirector];
+	
+	[[director openGLView] removeFromSuperview];
+	
+	[director end];	
+}
+
+- (void)applicationSignificantTimeChange:(UIApplication *)application {
+	[[CCDirector sharedDirector] setNextDeltaTimeZero:YES];
+}
+
+- (void)dealloc {
+	[[CCDirector sharedDirector] end];
+}
 @end
