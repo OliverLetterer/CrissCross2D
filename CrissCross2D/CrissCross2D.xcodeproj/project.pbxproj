@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A72B7CCA144195900047FBE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CC9144195900047FBE1 /* UIKit.framework */; };
+		A72B7CCC144195900047FBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CCB144195900047FBE1 /* Foundation.framework */; };
+		A72B7CCE144195900047FBE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CCD144195900047FBE1 /* CoreGraphics.framework */; };
+		A72B7CD4144195900047FBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A72B7CD2144195900047FBE1 /* InfoPlist.strings */; };
+		A72B7CD6144195900047FBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72B7CD5144195900047FBE1 /* main.m */; };
+		A72B7CDA144195900047FBE1 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72B7CD9144195900047FBE1 /* CCAppDelegate.m */; };
+		A72B7CE2144195900047FBE1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CE1144195900047FBE1 /* SenTestingKit.framework */; };
+		A72B7CE3144195900047FBE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CC9144195900047FBE1 /* UIKit.framework */; };
+		A72B7CE4144195900047FBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CCB144195900047FBE1 /* Foundation.framework */; };
+		A72B7CEC144195910047FBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A72B7CEA144195900047FBE1 /* InfoPlist.strings */; };
+		A72B7CEF144195910047FBE1 /* CrissCross2DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72B7CEE144195910047FBE1 /* CrissCross2DTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A72B7CE5144195900047FBE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A72B7CBC144195900047FBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A72B7CC4144195900047FBE1;
+			remoteInfo = CrissCross2D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A72B7CC5144195900047FBE1 /* CrissCross2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrissCross2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72B7CC9144195900047FBE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A72B7CCB144195900047FBE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A72B7CCD144195900047FBE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A72B7CD1144195900047FBE1 /* CrissCross2D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrissCross2D-Info.plist"; sourceTree = "<group>"; };
+		A72B7CD3144195900047FBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A72B7CD5144195900047FBE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A72B7CD7144195900047FBE1 /* CrissCross2D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrissCross2D-Prefix.pch"; sourceTree = "<group>"; };
+		A72B7CD8144195900047FBE1 /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
+		A72B7CD9144195900047FBE1 /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
+		A72B7CE0144195900047FBE1 /* CrissCross2DTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrissCross2DTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72B7CE1144195900047FBE1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A72B7CE9144195900047FBE1 /* CrissCross2DTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrissCross2DTests-Info.plist"; sourceTree = "<group>"; };
+		A72B7CEB144195910047FBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A72B7CED144195910047FBE1 /* CrissCross2DTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrissCross2DTests.h; sourceTree = "<group>"; };
+		A72B7CEE144195910047FBE1 /* CrissCross2DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrissCross2DTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A72B7CC2144195900047FBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B7CCA144195900047FBE1 /* UIKit.framework in Frameworks */,
+				A72B7CCC144195900047FBE1 /* Foundation.framework in Frameworks */,
+				A72B7CCE144195900047FBE1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B7CDC144195900047FBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B7CE2144195900047FBE1 /* SenTestingKit.framework in Frameworks */,
+				A72B7CE3144195900047FBE1 /* UIKit.framework in Frameworks */,
+				A72B7CE4144195900047FBE1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A72B7CBA144195900047FBE1 = {
+			isa = PBXGroup;
+			children = (
+				A72B7CCF144195900047FBE1 /* CrissCross2D */,
+				A72B7CE7144195900047FBE1 /* CrissCross2DTests */,
+				A72B7CC8144195900047FBE1 /* Frameworks */,
+				A72B7CC6144195900047FBE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A72B7CC6144195900047FBE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72B7CC5144195900047FBE1 /* CrissCross2D.app */,
+				A72B7CE0144195900047FBE1 /* CrissCross2DTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A72B7CC8144195900047FBE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A72B7CC9144195900047FBE1 /* UIKit.framework */,
+				A72B7CCB144195900047FBE1 /* Foundation.framework */,
+				A72B7CCD144195900047FBE1 /* CoreGraphics.framework */,
+				A72B7CE1144195900047FBE1 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A72B7CCF144195900047FBE1 /* CrissCross2D */ = {
+			isa = PBXGroup;
+			children = (
+				A72B7CD8144195900047FBE1 /* CCAppDelegate.h */,
+				A72B7CD9144195900047FBE1 /* CCAppDelegate.m */,
+				A72B7CD0144195900047FBE1 /* Supporting Files */,
+			);
+			path = CrissCross2D;
+			sourceTree = "<group>";
+		};
+		A72B7CD0144195900047FBE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72B7CD1144195900047FBE1 /* CrissCross2D-Info.plist */,
+				A72B7CD2144195900047FBE1 /* InfoPlist.strings */,
+				A72B7CD5144195900047FBE1 /* main.m */,
+				A72B7CD7144195900047FBE1 /* CrissCross2D-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A72B7CE7144195900047FBE1 /* CrissCross2DTests */ = {
+			isa = PBXGroup;
+			children = (
+				A72B7CED144195910047FBE1 /* CrissCross2DTests.h */,
+				A72B7CEE144195910047FBE1 /* CrissCross2DTests.m */,
+				A72B7CE8144195900047FBE1 /* Supporting Files */,
+			);
+			path = CrissCross2DTests;
+			sourceTree = "<group>";
+		};
+		A72B7CE8144195900047FBE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72B7CE9144195900047FBE1 /* CrissCross2DTests-Info.plist */,
+				A72B7CEA144195900047FBE1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A72B7CC4144195900047FBE1 /* CrissCross2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72B7CF2144195910047FBE1 /* Build configuration list for PBXNativeTarget "CrissCross2D" */;
+			buildPhases = (
+				A72B7CC1144195900047FBE1 /* Sources */,
+				A72B7CC2144195900047FBE1 /* Frameworks */,
+				A72B7CC3144195900047FBE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrissCross2D;
+			productName = CrissCross2D;
+			productReference = A72B7CC5144195900047FBE1 /* CrissCross2D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A72B7CDF144195900047FBE1 /* CrissCross2DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72B7CF5144195910047FBE1 /* Build configuration list for PBXNativeTarget "CrissCross2DTests" */;
+			buildPhases = (
+				A72B7CDB144195900047FBE1 /* Sources */,
+				A72B7CDC144195900047FBE1 /* Frameworks */,
+				A72B7CDD144195900047FBE1 /* Resources */,
+				A72B7CDE144195900047FBE1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72B7CE6144195900047FBE1 /* PBXTargetDependency */,
+			);
+			name = CrissCross2DTests;
+			productName = CrissCross2DTests;
+			productReference = A72B7CE0144195900047FBE1 /* CrissCross2DTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A72B7CBC144195900047FBE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Home;
+			};
+			buildConfigurationList = A72B7CBF144195900047FBE1 /* Build configuration list for PBXProject "CrissCross2D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A72B7CBA144195900047FBE1;
+			productRefGroup = A72B7CC6144195900047FBE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A72B7CC4144195900047FBE1 /* CrissCross2D */,
+				A72B7CDF144195900047FBE1 /* CrissCross2DTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A72B7CC3144195900047FBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B7CD4144195900047FBE1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B7CDD144195900047FBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B7CEC144195910047FBE1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A72B7CDE144195900047FBE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A72B7CC1144195900047FBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B7CD6144195900047FBE1 /* main.m in Sources */,
+				A72B7CDA144195900047FBE1 /* CCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72B7CDB144195900047FBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72B7CEF144195910047FBE1 /* CrissCross2DTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72B7CE6144195900047FBE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A72B7CC4144195900047FBE1 /* CrissCross2D */;
+			targetProxy = A72B7CE5144195900047FBE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A72B7CD2144195900047FBE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72B7CD3144195900047FBE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A72B7CEA144195900047FBE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72B7CEB144195910047FBE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A72B7CF0144195910047FBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A72B7CF1144195910047FBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A72B7CF3144195910047FBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrissCross2D/CrissCross2D-Prefix.pch";
+				INFOPLIST_FILE = "CrissCross2D/CrissCross2D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A72B7CF4144195910047FBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrissCross2D/CrissCross2D-Prefix.pch";
+				INFOPLIST_FILE = "CrissCross2D/CrissCross2D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A72B7CF6144195910047FBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrissCross2D.app/CrissCross2D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrissCross2D/CrissCross2D-Prefix.pch";
+				INFOPLIST_FILE = "CrissCross2DTests/CrissCross2DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A72B7CF7144195910047FBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrissCross2D.app/CrissCross2D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrissCross2D/CrissCross2D-Prefix.pch";
+				INFOPLIST_FILE = "CrissCross2DTests/CrissCross2DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A72B7CBF144195900047FBE1 /* Build configuration list for PBXProject "CrissCross2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72B7CF0144195910047FBE1 /* Debug */,
+				A72B7CF1144195910047FBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72B7CF2144195910047FBE1 /* Build configuration list for PBXNativeTarget "CrissCross2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72B7CF3144195910047FBE1 /* Debug */,
+				A72B7CF4144195910047FBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A72B7CF5144195910047FBE1 /* Build configuration list for PBXNativeTarget "CrissCross2DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72B7CF6144195910047FBE1 /* Debug */,
+				A72B7CF7144195910047FBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A72B7CBC144195900047FBE1 /* Project object */;
+}
