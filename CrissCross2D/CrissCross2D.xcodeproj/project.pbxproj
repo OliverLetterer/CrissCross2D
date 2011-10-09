@@ -548,7 +548,6 @@
 		A72B7E10144197370047FBE1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A72B7E12144197400047FBE1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A72B7E14144197A90047FBE1 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		A7BEFF5F14419A4F0023FD3C /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		A7BEFF6014419A5C0023FD3C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A7BEFF6114419A5C0023FD3C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A7BEFF6214419A5C0023FD3C /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
@@ -640,7 +639,6 @@
 				A7BEFF6114419A5C0023FD3C /* RootViewController.m */,
 				A7BEFF6214419A5C0023FD3C /* HelloWorldLayer.h */,
 				A7BEFF6314419A5C0023FD3C /* HelloWorldLayer.m */,
-				A7BEFF5F14419A4F0023FD3C /* GameConfig.h */,
 				A72B7CD8144195900047FBE1 /* CCAppDelegate.h */,
 				A72B7CD9144195900047FBE1 /* CCAppDelegate.m */,
 				A72B7CD0144195900047FBE1 /* Supporting Files */,
