@@ -10,9 +10,7 @@
 		A72B7CCA144195900047FBE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CC9144195900047FBE1 /* UIKit.framework */; };
 		A72B7CCC144195900047FBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CCB144195900047FBE1 /* Foundation.framework */; };
 		A72B7CCE144195900047FBE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CCD144195900047FBE1 /* CoreGraphics.framework */; };
-		A72B7CD4144195900047FBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A72B7CD2144195900047FBE1 /* InfoPlist.strings */; };
 		A72B7CD6144195900047FBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72B7CD5144195900047FBE1 /* main.m */; };
-		A72B7CDA144195900047FBE1 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72B7CD9144195900047FBE1 /* CCAppDelegate.m */; };
 		A72B7CE2144195900047FBE1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CE1144195900047FBE1 /* SenTestingKit.framework */; };
 		A72B7CE3144195900047FBE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CC9144195900047FBE1 /* UIKit.framework */; };
 		A72B7CE4144195900047FBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7CCB144195900047FBE1 /* Foundation.framework */; };
@@ -25,8 +23,12 @@
 		A72B7E11144197370047FBE1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7E10144197370047FBE1 /* AudioToolbox.framework */; };
 		A72B7E13144197400047FBE1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7E12144197400047FBE1 /* AVFoundation.framework */; };
 		A72B7E15144197A90047FBE1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A72B7E14144197A90047FBE1 /* libz.1.2.5.dylib */; };
-		A7BEFF6414419A5C0023FD3C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BEFF6114419A5C0023FD3C /* RootViewController.m */; };
-		A7BEFF6514419A5C0023FD3C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BEFF6314419A5C0023FD3C /* HelloWorldLayer.m */; };
+		A7BE00B314419F7B0023FD3C /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00A414419F7B0023FD3C /* CCAppDelegate.m */; };
+		A7BE00B414419F7B0023FD3C /* CCCrissCrossBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00A914419F7B0023FD3C /* CCCrissCrossBoard.m */; };
+		A7BE00B514419F7B0023FD3C /* CCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00AD14419F7B0023FD3C /* CCPlayer.m */; };
+		A7BE00B614419F7B0023FD3C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00B014419F7B0023FD3C /* HelloWorldLayer.m */; };
+		A7BE00B714419F7B0023FD3C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00B214419F7B0023FD3C /* RootViewController.m */; };
+		A7BE00BA14419FA00023FD3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7BE00B814419FA00023FD3C /* InfoPlist.strings */; };
 		A7BEFF7114419A9F0023FD3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A7BEFF6814419A9F0023FD3C /* Default.png */; };
 		A7BEFF7214419A9F0023FD3C /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = A7BEFF6914419A9F0023FD3C /* fps_images.png */; };
 		A7BEFF7314419A9F0023FD3C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A7BEFF6A14419A9F0023FD3C /* Icon-72.png */; };
@@ -530,11 +532,8 @@
 		A72B7CCB144195900047FBE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A72B7CCD144195900047FBE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A72B7CD1144195900047FBE1 /* CrissCross2D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrissCross2D-Info.plist"; sourceTree = "<group>"; };
-		A72B7CD3144195900047FBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A72B7CD5144195900047FBE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A72B7CD7144195900047FBE1 /* CrissCross2D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrissCross2D-Prefix.pch"; sourceTree = "<group>"; };
-		A72B7CD8144195900047FBE1 /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
-		A72B7CD9144195900047FBE1 /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
 		A72B7CE0144195900047FBE1 /* CrissCross2DTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrissCross2DTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72B7CE1144195900047FBE1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A72B7CE9144195900047FBE1 /* CrissCross2DTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrissCross2DTests-Info.plist"; sourceTree = "<group>"; };
@@ -548,10 +547,20 @@
 		A72B7E10144197370047FBE1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A72B7E12144197400047FBE1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A72B7E14144197A90047FBE1 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		A7BEFF6014419A5C0023FD3C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		A7BEFF6114419A5C0023FD3C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		A7BEFF6214419A5C0023FD3C /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		A7BEFF6314419A5C0023FD3C /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		A7BE00A314419F7B0023FD3C /* CCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
+		A7BE00A414419F7B0023FD3C /* CCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
+		A7BE00A614419F7B0023FD3C /* CCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBridge.h; sourceTree = "<group>"; };
+		A7BE00A814419F7B0023FD3C /* CCCrissCrossBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCrissCrossBoard.h; sourceTree = "<group>"; };
+		A7BE00A914419F7B0023FD3C /* CCCrissCrossBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCrissCrossBoard.m; sourceTree = "<group>"; };
+		A7BE00AA14419F7B0023FD3C /* CCField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCField.h; sourceTree = "<group>"; };
+		A7BE00AC14419F7B0023FD3C /* CCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayer.h; sourceTree = "<group>"; };
+		A7BE00AD14419F7B0023FD3C /* CCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayer.m; sourceTree = "<group>"; };
+		A7BE00AE14419F7B0023FD3C /* CrissCrossLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrissCrossLogic.h; sourceTree = "<group>"; };
+		A7BE00AF14419F7B0023FD3C /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		A7BE00B014419F7B0023FD3C /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		A7BE00B114419F7B0023FD3C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A7BE00B214419F7B0023FD3C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A7BE00B914419FA00023FD3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A7BEFF6814419A9F0023FD3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A7BEFF6914419A9F0023FD3C /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		A7BEFF6A14419A9F0023FD3C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -634,13 +643,8 @@
 		A72B7CCF144195900047FBE1 /* CrissCross2D */ = {
 			isa = PBXGroup;
 			children = (
+				A7BE00A214419F7B0023FD3C /* Classes */,
 				A7BEFF6714419A970023FD3C /* Resources */,
-				A7BEFF6014419A5C0023FD3C /* RootViewController.h */,
-				A7BEFF6114419A5C0023FD3C /* RootViewController.m */,
-				A7BEFF6214419A5C0023FD3C /* HelloWorldLayer.h */,
-				A7BEFF6314419A5C0023FD3C /* HelloWorldLayer.m */,
-				A72B7CD8144195900047FBE1 /* CCAppDelegate.h */,
-				A72B7CD9144195900047FBE1 /* CCAppDelegate.m */,
 				A72B7CD0144195900047FBE1 /* Supporting Files */,
 			);
 			path = CrissCross2D;
@@ -650,7 +654,6 @@
 			isa = PBXGroup;
 			children = (
 				A72B7CD1144195900047FBE1 /* CrissCross2D-Info.plist */,
-				A72B7CD2144195900047FBE1 /* InfoPlist.strings */,
 				A72B7CD5144195900047FBE1 /* main.m */,
 				A72B7CD7144195900047FBE1 /* CrissCross2D-Prefix.pch */,
 			);
@@ -766,9 +769,54 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A7BE00A214419F7B0023FD3C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE00A514419F7B0023FD3C /* CrissCrossLogic */,
+				A7BE00A314419F7B0023FD3C /* CCAppDelegate.h */,
+				A7BE00A414419F7B0023FD3C /* CCAppDelegate.m */,
+				A7BE00AF14419F7B0023FD3C /* HelloWorldLayer.h */,
+				A7BE00B014419F7B0023FD3C /* HelloWorldLayer.m */,
+				A7BE00B114419F7B0023FD3C /* RootViewController.h */,
+				A7BE00B214419F7B0023FD3C /* RootViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A7BE00A514419F7B0023FD3C /* CrissCrossLogic */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE00AE14419F7B0023FD3C /* CrissCrossLogic.h */,
+				A7BE00AA14419F7B0023FD3C /* CCField.h */,
+				A7BE00A614419F7B0023FD3C /* CCBridge.h */,
+				A7BE00A714419F7B0023FD3C /* CCCrissCrossBoard */,
+				A7BE00AB14419F7B0023FD3C /* CCPlayer */,
+			);
+			path = CrissCrossLogic;
+			sourceTree = "<group>";
+		};
+		A7BE00A714419F7B0023FD3C /* CCCrissCrossBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE00A814419F7B0023FD3C /* CCCrissCrossBoard.h */,
+				A7BE00A914419F7B0023FD3C /* CCCrissCrossBoard.m */,
+			);
+			path = CCCrissCrossBoard;
+			sourceTree = "<group>";
+		};
+		A7BE00AB14419F7B0023FD3C /* CCPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE00AC14419F7B0023FD3C /* CCPlayer.h */,
+				A7BE00AD14419F7B0023FD3C /* CCPlayer.m */,
+			);
+			path = CCPlayer;
+			sourceTree = "<group>";
+		};
 		A7BEFF6714419A970023FD3C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A7BE00B814419FA00023FD3C /* InfoPlist.strings */,
 				A7BEFF6814419A9F0023FD3C /* Default.png */,
 				A7BEFF6914419A9F0023FD3C /* fps_images.png */,
 				A7BEFF6A14419A9F0023FD3C /* Icon-72.png */,
@@ -1332,7 +1380,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72B7CD4144195900047FBE1 /* InfoPlist.strings in Resources */,
 				A7BEFF7114419A9F0023FD3C /* Default.png in Resources */,
 				A7BEFF7214419A9F0023FD3C /* fps_images.png in Resources */,
 				A7BEFF7314419A9F0023FD3C /* Icon-72.png in Resources */,
@@ -1342,6 +1389,7 @@
 				A7BEFF7714419A9F0023FD3C /* Icon.png in Resources */,
 				A7BEFF7814419A9F0023FD3C /* Icon@2x.png in Resources */,
 				A7BEFF7914419A9F0023FD3C /* iTunesArtwork in Resources */,
+				A7BE00BA14419FA00023FD3C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1377,9 +1425,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A72B7CD6144195900047FBE1 /* main.m in Sources */,
-				A72B7CDA144195900047FBE1 /* CCAppDelegate.m in Sources */,
-				A7BEFF6414419A5C0023FD3C /* RootViewController.m in Sources */,
-				A7BEFF6514419A5C0023FD3C /* HelloWorldLayer.m in Sources */,
+				A7BE00B314419F7B0023FD3C /* CCAppDelegate.m in Sources */,
+				A7BE00B414419F7B0023FD3C /* CCCrissCrossBoard.m in Sources */,
+				A7BE00B514419F7B0023FD3C /* CCPlayer.m in Sources */,
+				A7BE00B614419F7B0023FD3C /* HelloWorldLayer.m in Sources */,
+				A7BE00B714419F7B0023FD3C /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1407,18 +1457,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A72B7CD2144195900047FBE1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A72B7CD3144195900047FBE1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		A72B7CEA144195900047FBE1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A72B7CEB144195910047FBE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A7BE00B814419FA00023FD3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7BE00B914419FA00023FD3C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
