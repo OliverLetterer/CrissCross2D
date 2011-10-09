@@ -1,31 +1,20 @@
 //
-//  RootViewController.m
+//  CCRootViewController.m
 //  CrissCross2D
 //
 //  Created by Oliver Letterer on 09.10.11.
-//  Copyright Home 2011. All rights reserved.
+//  Copyright 2011 Home. All rights reserved.
 //
 
-//
-// RootViewController + iAd
-// If you want to support iAd, use this class as the controller of your iAd
-//
+#import "CCRootViewController.h"
 
-#import "cocos2d.h"
 
-#import "RootViewController.h"
-#import "GameConfig.h"
+@implementation CCRootViewController
 
-@implementation RootViewController
-
-// Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
-//
-// This callback only will be called when GAME_AUTOROTATION == kGameAutorotationUIViewController
-//
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
 	//
@@ -34,7 +23,7 @@
 	///
 	CGRect screenRect = [[UIScreen mainScreen] bounds];
 	CGRect rect = CGRectZero;
-
+    
 	
 	if(toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)		
 		rect = screenRect;
@@ -53,6 +42,4 @@
 	glView.frame = rect;
 }
 
-
 @end
-

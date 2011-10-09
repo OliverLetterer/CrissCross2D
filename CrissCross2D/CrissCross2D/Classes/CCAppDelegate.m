@@ -7,8 +7,9 @@
 //
 
 #import "CCAppDelegate.h"
-#import "HelloWorldLayer.h"
-#import "RootViewController.h"
+
+#import "CCRootViewController.h"
+#import "CCGameScene.h"
 
 @implementation CCAppDelegate
 
@@ -47,7 +48,7 @@
 	CCDirector *director = [CCDirector sharedDirector];
 	
 	// Init the View Controller
-    RootViewController *viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
+    CCRootViewController *viewController = [[CCRootViewController alloc] init];
 	viewController.wantsFullScreenLayout = YES;
 	
 	//
@@ -101,7 +102,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+	[[CCDirector sharedDirector] runWithScene: [CCGameScene node]];
 }
 
 

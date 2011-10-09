@@ -26,9 +26,9 @@
 		A7BE00B314419F7B0023FD3C /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00A414419F7B0023FD3C /* CCAppDelegate.m */; };
 		A7BE00B414419F7B0023FD3C /* CCCrissCrossBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00A914419F7B0023FD3C /* CCCrissCrossBoard.m */; };
 		A7BE00B514419F7B0023FD3C /* CCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00AD14419F7B0023FD3C /* CCPlayer.m */; };
-		A7BE00B614419F7B0023FD3C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00B014419F7B0023FD3C /* HelloWorldLayer.m */; };
-		A7BE00B714419F7B0023FD3C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00B214419F7B0023FD3C /* RootViewController.m */; };
 		A7BE00BA14419FA00023FD3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7BE00B814419FA00023FD3C /* InfoPlist.strings */; };
+		A7BE00BD1441A08A0023FD3C /* CCGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00BC1441A08A0023FD3C /* CCGameScene.m */; };
+		A7BE00C01441A15E0023FD3C /* CCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE00BF1441A15E0023FD3C /* CCRootViewController.m */; };
 		A7BEFF7114419A9F0023FD3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A7BEFF6814419A9F0023FD3C /* Default.png */; };
 		A7BEFF7214419A9F0023FD3C /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = A7BEFF6914419A9F0023FD3C /* fps_images.png */; };
 		A7BEFF7314419A9F0023FD3C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A7BEFF6A14419A9F0023FD3C /* Icon-72.png */; };
@@ -556,11 +556,11 @@
 		A7BE00AC14419F7B0023FD3C /* CCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayer.h; sourceTree = "<group>"; };
 		A7BE00AD14419F7B0023FD3C /* CCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayer.m; sourceTree = "<group>"; };
 		A7BE00AE14419F7B0023FD3C /* CrissCrossLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrissCrossLogic.h; sourceTree = "<group>"; };
-		A7BE00AF14419F7B0023FD3C /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		A7BE00B014419F7B0023FD3C /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
-		A7BE00B114419F7B0023FD3C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		A7BE00B214419F7B0023FD3C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A7BE00B914419FA00023FD3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A7BE00BB1441A08A0023FD3C /* CCGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGameScene.h; sourceTree = "<group>"; };
+		A7BE00BC1441A08A0023FD3C /* CCGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGameScene.m; sourceTree = "<group>"; };
+		A7BE00BE1441A15E0023FD3C /* CCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRootViewController.h; sourceTree = "<group>"; };
+		A7BE00BF1441A15E0023FD3C /* CCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRootViewController.m; sourceTree = "<group>"; };
 		A7BEFF6814419A9F0023FD3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A7BEFF6914419A9F0023FD3C /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		A7BEFF6A14419A9F0023FD3C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -775,10 +775,10 @@
 				A7BE00A514419F7B0023FD3C /* CrissCrossLogic */,
 				A7BE00A314419F7B0023FD3C /* CCAppDelegate.h */,
 				A7BE00A414419F7B0023FD3C /* CCAppDelegate.m */,
-				A7BE00AF14419F7B0023FD3C /* HelloWorldLayer.h */,
-				A7BE00B014419F7B0023FD3C /* HelloWorldLayer.m */,
-				A7BE00B114419F7B0023FD3C /* RootViewController.h */,
-				A7BE00B214419F7B0023FD3C /* RootViewController.m */,
+				A7BE00BB1441A08A0023FD3C /* CCGameScene.h */,
+				A7BE00BC1441A08A0023FD3C /* CCGameScene.m */,
+				A7BE00BE1441A15E0023FD3C /* CCRootViewController.h */,
+				A7BE00BF1441A15E0023FD3C /* CCRootViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1428,8 +1428,8 @@
 				A7BE00B314419F7B0023FD3C /* CCAppDelegate.m in Sources */,
 				A7BE00B414419F7B0023FD3C /* CCCrissCrossBoard.m in Sources */,
 				A7BE00B514419F7B0023FD3C /* CCPlayer.m in Sources */,
-				A7BE00B614419F7B0023FD3C /* HelloWorldLayer.m in Sources */,
-				A7BE00B714419F7B0023FD3C /* RootViewController.m in Sources */,
+				A7BE00BD1441A08A0023FD3C /* CCGameScene.m in Sources */,
+				A7BE00C01441A15E0023FD3C /* CCRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
